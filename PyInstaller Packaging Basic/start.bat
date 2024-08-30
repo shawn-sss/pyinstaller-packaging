@@ -15,7 +15,7 @@ rem Create and move to temp folder
 mkdir temp && pushd temp
 
 rem Generate application with PyInstaller
-pyinstaller --noconfirm --onefile --windowed --icon "..\app-input\setup-files\icon.ico" --add-data "..\app-input\setup-files;setup-files/" "..\app-input\app.pyw"
+pyinstaller --noconfirm --onefile --windowed --icon "..\app-input\icon.ico" --add-data "..\app-input\setup-files;setup-files/" "..\app-input\app.pyw"
 
 rem Copy files into the app-output folder
 xcopy dist "..\app-output\*" /s /i /y
